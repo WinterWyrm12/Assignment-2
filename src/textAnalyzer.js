@@ -29,6 +29,10 @@ function lineCount(text){
 const sample = fs.readFileSync('C:/College Things/Rize_Application Development/Week 3/Assignment-2/data/sample-text.txt', 'utf8');
 const quotes = fs.readFileSync('C:/College Things/Rize_Application Development/Week 3/Assignment-2/data/quotes.txt', 'utf8');
 
-console.log("word count: ", wordCount(sample));
-console.log('Longest: ',longestWord(sample));
-console.log('Lines: ',lineCount(quotes));
+
+
+module.exports = {
+    wordCount,
+    longestWord,
+    lineCount
+};

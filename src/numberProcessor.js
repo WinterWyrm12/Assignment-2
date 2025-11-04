@@ -31,8 +31,15 @@ const numbers = numberstext
     .filter(line => line !== '')
     .map(Number);
 
-/* Test */
+/* Test
 console.log('sum of all numbers: ', sum(numbers));
 console.log('highest number: ', highest(numbers));
 console.log('lowest number: ', lowest(numbers));
-console.log('average: ', average(numbers));
+console.log('average: ', average(numbers)); */
+
+module.exports = {
+    sum,
+    highest,
+    lowest,
+    average
+};
